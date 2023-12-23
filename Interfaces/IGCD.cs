@@ -6,5 +6,6 @@ namespace Crypt.Interfaces
     public interface IGCD
     {
         public Pollard PollardAlgoritm(int N);
+        public Ferma FermaAlgoritm(int N);
     }
 }

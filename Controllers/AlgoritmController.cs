@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Crypt.Controllers
 {
-    public class AlgoritmController:Controller
+    public class AlgoritmController : Controller
     {
         private readonly IGCD _gCD;
         public AlgoritmController(IGCD gCD)
@@ -20,20 +20,23 @@ namespace Crypt.Controllers
         [HttpPost]
         public IActionResult RoAlgoritmPollardaOutPut(int N)
         {
-           Pollard result= _gCD.PollardAlgoritm(N);
+            Pollard result = _gCD.PollardAlgoritm(N);
             return View(result);
         }
         #endregion
+
         #region AlgoritmFerma
-                [HttpGet]
+
+        [HttpGet]
         public IActionResult AlgoritmFerma()
         {
-            return View();  
+            return View();
         }
         [HttpPost]
         public IActionResult AlgoritmFermaOutPut(int N)
         {
-            return View(N);
+          Ferma ferma =  _gCD.FermaAlgoritm(N);  
+            return View(ferma);
         }
 
         #endregion
