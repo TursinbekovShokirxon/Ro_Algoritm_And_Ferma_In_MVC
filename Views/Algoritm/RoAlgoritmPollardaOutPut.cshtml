@@ -1,0 +1,69 @@
+﻿@model Crypt.Models.Pollard
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollard Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        dl {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        dt, dd {
+            margin: 5px 0;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pollard Details</h1>
+
+        <dl>
+            <dt>First Number:</dt>
+            <dd>@Model.FirstNumber</dd>
+
+            <dt>Second Number:</dt>
+            <dd>@Model.SecondNumber</dd>
+        </dl>
+
+        <a href="/Algoritm/RoAlgoritmPollarda">Back to List</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрируем элементы по горизонтали */
+}
+
+h1 {
+    color: #333;
+}
+
+.big-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+    .big-button:hover {
+        background-color: #2980b9;
+    }
